@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>비공이조</title>
+    <title>B02</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style></style>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD0JYnkcVFES85W93h6MZ6nrdtfJTpWX5A",
+        authDomain: "b02jo-d7b35.firebaseapp.com",
+        projectId: "b02jo-d7b35",
+        storageBucket: "b02jo-d7b35.appspot.com",
+        messagingSenderId: "1032819877127",
+        appId: "1:1032819877127:web:39cb4d6a5634970d9451a2",
+        measurementId: "G-GKZEK7Z1YN",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+    </script>
   </head>
-  <body>
-    <h1 class="예시">예시</h1>
-  </body>
+
+  <body></body>
 </html>
