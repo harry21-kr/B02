@@ -27,10 +27,10 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      const query = collection(db, "subscribers");
-      const querySnapshot = await getDocs(query);
+      const subscribersCollection = collection(db, "subscribers");
+      const subscribersSnapshot = await getDocs(subscribersCollection);
 
-      querySnapshot.forEach((doc) => {
+      subscribersSnapshot.forEach((doc) => {
         const data = doc.data();
         const userName = data.userName;
         const userEmail = data.userEmail;
