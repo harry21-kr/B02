@@ -1,0 +1,178 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body_background {
+  background-color: #212121;
+  color: #bfbfbf;
+}
+
+.nav {
+  height: 70px;
+  display: flex;
+  color: #bfbfbf;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #2e2e2e;
+}
+
+.nav_title {
+  font-size: 30px;
+}
+
+.infobox {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.info_content {
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 400px;
+  width: 800px;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+}
+
+.info_content_title {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.info_main1 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.info_main2 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.links {
+  align-items: center;
+}
+
+img {
+  width: 400px;
+  height: 250px;
+}
+
+.card_right_text {
+  text-align: end;
+}
+
+.idv_name_tag {
+  font-size: 30px;
+}
+
+.idv_info_1 {
+  font-size: 30px;
+}
+
+.idv_info_2 {
+  font-size: 30px;
+}
+
+.idv_info_3 {
+  font-size: 30px;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.cardbox {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 50px;
+  width: 1400px;
+  height: 600px;
+  border: 1px solid #bfbfbf;
+  display: flex;
+}
+
+.card_left {
+  background-color: aqua;
+  width: 50%;
+}
+
+.card_right {
+  background-color: tomato;
+  width: 50%;
+}
+
+.subbox_form {
+  display: flex;
+  justify-content: center;
+}
+
+.subbox_low {
+  margin-top: 100px;
+  border: 1px solid #bfbfbf;
+  width: 1200px;
+  height: 500px;
+}
+
+.subbox_form {
+  text-align: center;
+}
+
+.subbox_low_title {
+  border-top: 50px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 40px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.subbox_low_text {
+  font-size: 25px;
+  margin: 8px;
+}
+
+#submit-form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 350px;
+}
+
+#submit-form input {
+  padding: 20px 0px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background-color: #212121;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.submitbtn {
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: #212121;
+  border: 1px solid #bfbfbf;
+  color: white;
+}
