@@ -1,6 +1,8 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 
+/* body 전체에 대한 기본적인 background color 와 text color */
+
 body {
   font-family: "Nanum Gothic Coding", monospace;
   font-weight: 400;
@@ -11,6 +13,8 @@ body {
   background-color: #212121;
   color: #bfbfbf;
 }
+
+/* 화면 최 상단 NAV바 필요하면 fixed 추가 가능 */
 
 .nav {
   height: 70px;
@@ -24,6 +28,8 @@ body {
 .nav_title {
   font-size: 30px;
 }
+
+/* NAV바 아래에 있는 2개의 박스 */
 
 .infobox {
   display: flex;
@@ -61,6 +67,8 @@ body {
   padding-left: 20px;
 }
 
+/* 팀원소개 카드 왼쪽 박스 내용 */
+
 .links {
   align-items: center;
 }
@@ -70,24 +78,34 @@ img {
   height: 250px;
 }
 
-.card_right_text {
-  text-align: end;
-}
+/* 팀원소개 카드 오른쪽 텍스트 내용 */
 
 .idv_name_tag {
   font-size: 30px;
+}
+
+.div_cours {
 }
 
 .idv_info_1 {
   font-size: 30px;
 }
 
+.idv_info_1_content {
+}
+
 .idv_info_2 {
   font-size: 30px;
 }
 
+.idv_info_2_content {
+}
+
 .idv_info_3 {
   font-size: 30px;
+}
+
+.idv_info_3_contnet {
 }
 
 .text {
@@ -97,9 +115,7 @@ img {
   margin-top: 80px;
 }
 
-input:focus {
-  outline: none;
-}
+/* 팀원 소개 카드박스 폼 */
 
 .cardbox {
   display: flex;
@@ -112,6 +128,7 @@ input:focus {
   height: 600px;
   border: 1px solid #bfbfbf;
   display: flex;
+  border-radius: 10px;
 }
 
 .card_left {
@@ -122,7 +139,11 @@ input:focus {
 .card_right {
   background-color: tomato;
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
+
+/* 맨 아래쪽에 있는 구독박스 */
 
 .subbox_form {
   display: flex;
@@ -134,6 +155,7 @@ input:focus {
   border: 1px solid #bfbfbf;
   width: 1200px;
   height: 500px;
+  border-radius: 10px;
 }
 
 .subbox_form {
@@ -175,4 +197,8 @@ input:focus {
   background-color: #212121;
   border: 1px solid #bfbfbf;
   color: white;
+}
+
+input:focus {
+  outline: none;
 }
