@@ -1,3 +1,4 @@
+import { deleteSubscriber } from "./deleteSubscriber.js";
 import { collection, getDocs } from "./imports.js";
 import { initFirebase } from "./utils/initFirebase.js";
 
@@ -21,6 +22,10 @@ subscribersSnapshot.forEach((doc) => {
             <tr>
                 <td>${userName}</td>
                 <td>${userEmail}</td>
+                <td><button id="deleteBtn${doc.id}">구독 취소</button></td>
             </tr>`;
+
   $("#subscribersList").append(temp_html);
+
+  $(`#deleteBtn${doc.id}`).click(() => deleteSubscriber(doc.id));
 });
