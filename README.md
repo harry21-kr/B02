@@ -15,13 +15,13 @@
 ### 프로젝트 파일 구조
 ```bash
 ├── css
-│   ├── reset.css
-│   ├── style.css
+│   ├─ reset.css
+│   └─ style.css
 ├── js
 │   ├── config
-│   │   ├── firebase.js
+│   │   └─ firebase.js
 │   ├── utils
-│   │   ├── initFirebase.js
+│   │   └─ initFirebase.js
 │   ├── createSubscriber.js
 │   ├── deleteSubscriber.js
 │   ├── imports.js
