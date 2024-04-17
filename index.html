@@ -5,44 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B02</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-      import {
-        collection,
-        getDocs,
-      } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+    <link rel="stylesheet" href="css/style.css" />
 
-      const firebaseConfig = {
-        apiKey: "AIzaSyD0JYnkcVFES85W93h6MZ6nrdtfJTpWX5A",
-        authDomain: "b02jo-d7b35.firebaseapp.com",
-        projectId: "b02jo-d7b35",
-        storageBucket: "b02jo-d7b35.appspot.com",
-        messagingSenderId: "1032819877127",
-        appId: "1:1032819877127:web:39cb4d6a5634970d9451a2",
-        measurementId: "G-GKZEK7Z1YN",
-      };
+    <!-- 구독자 생성 -->
+    <script type="module" src="js/createSubscriber.js"></script>
 
-      const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
+    <!-- 구독자 제거 -->
+    <script type="module" src="js/deleteSubscriber.js"></script>
 
-      const subscribersCollection = collection(db, "subscribers");
-      const subscribersSnapshot = await getDocs(subscribersCollection);
+    <!-- 구독자 정보 업데이트 -->
+    <script type="module" src="js/updateSubscriber.js"></script>
 
-      subscribersSnapshot.forEach((doc) => {
-        const data = doc.data();
-        const userName = data.userName;
-        const userEmail = data.userEmail;
-
-        const temp_html = `
-            <div>
-                <p>${userName}</p>
-                <p>${userEmail}</p>
-            </div>`;
-        $("#text").append(temp_html);
-      });
-    </script>
+    <!-- 구독자 정보 가져오기 -->
+    <script type="module" src="js/readSubscriber.js"></script>
   </head>
   <body class="body_background">
     <nav class="nav">
