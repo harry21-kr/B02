@@ -71,42 +71,66 @@ body {
 
 .links {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 250px;
 }
 
 img {
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 330px;
+  margin-top: 80px;
+  margin-left: 100px;
+  border-radius: 10px;
+}
+
+.email {
+  margin-left: 280px;
+}
+
+.git_1 {
+}
+
+.blog {
+}
+
+.sns {
 }
 
 /* 팀원소개 카드 오른쪽 텍스트 내용 */
 
-.idv_name_tag {
-  font-size: 30px;
+.card_right_text {
+  margin-top: 85px;
 }
 
-.div_cours {
+.idv_name_tag {
+  font-size: 50px;
+}
+
+.div_course {
+  margin-left: 74px;
+  margin-top: 5px;
 }
 
 .idv_info_1 {
+  margin-top: 50px;
+  margin-left: 5px;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .idv_info_1_content {
-}
-
-.idv_info_2 {
-  font-size: 30px;
+  margin-left: 5px;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-right: 80px;
 }
 
 .idv_info_2_content {
+  margin-left: 10px;
 }
 
-.idv_info_3 {
-  font-size: 30px;
-}
-
-.idv_info_3_contnet {
-}
+/* 팀원소개 텍스트 */
 
 .text {
   text-align: center;
@@ -126,21 +150,15 @@ img {
   margin-top: 50px;
   width: 1400px;
   height: 600px;
-  border: 1px solid #bfbfbf;
   display: flex;
-  border-radius: 10px;
 }
 
 .card_left {
-  background-color: aqua;
   width: 50%;
 }
 
 .card_right {
-  background-color: tomato;
   width: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 /* 맨 아래쪽에 있는 구독박스 */
