@@ -41,7 +41,7 @@ body {
   margin-left: 150px;
   margin-right: 150px;
   height: 400px;
-  width: 800px;
+  width: 600px;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
 }
@@ -62,28 +62,26 @@ body {
 
 /* 구독 로직이 들어가야하는 박스 */
 
-/*
 .info_content_subbox {
   margin-top: 100px;
   margin-left: 150px;
   margin-right: 150px;
   height: 400px;
-  width: 800px;
+  width: 600px;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
 }
-*/
 
 .table {
   height: 400px;
-  width: 800px;
+  width: 100%;
 }
 
 thead {
-  border-top: 10px;
   font-size: medium;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  /* border-top: 2px solid white; */
+  border-bottom: 1px solid white;
+  height: 26px;
 }
 
 /* 팀원소개 카드 왼쪽 박스 내용 */
