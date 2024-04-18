@@ -38,4 +38,4 @@ export async function createSubscriber(event) {
   window.location.reload();
 }
 //구독하기 form안의 button에 Subscribe이벤트 추가
-$(".submitbtn").click(Subscribe);
+$(".submitbtn").click(createSubscriber);
