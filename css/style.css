@@ -7,6 +7,10 @@ body {
   font-family: "Nanum Gothic Coding", monospace;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .body_background {
@@ -18,6 +22,7 @@ body {
 
 .nav {
   height: 70px;
+  width: 100vw;
   display: flex;
   color: #bfbfbf;
   align-items: center;
@@ -32,16 +37,18 @@ body {
 /* NAV바 아래에 있는 2개의 박스 */
 
 .infobox {
+  margin-top: 100px;
+  max-width: 1224px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 .info_content {
-  margin-top: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
   height: 400px;
-  width: 600px;
+  min-width: 582px;
+  width: 100%;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
 }
@@ -63,11 +70,9 @@ body {
 /* 구독 로직이 들어가야하는 박스 */
 
 .info_content_subbox {
-  margin-top: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
   height: 400px;
-  width: 600px;
+  min-width: 482px;
+  width: 100%;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
   overflow-y: scroll;
@@ -175,6 +180,7 @@ body {
   color: white;
   font-size: 60px;
   margin-top: 80px;
+  padding-bottom: 8px;
 }
 
 /* 팀원 소개 카드박스 폼 */
