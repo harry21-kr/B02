@@ -23,8 +23,8 @@ subscribersSnapshot.forEach((doc) => {
             <tr>
                 <td>${userName}</td>
                 <td>${userEmail}</td>
-                <td><button id="updateBtn${doc.id}">정보 변경</button></td>
-                <td><button id="deleteBtn${doc.id}">구독 취소</button></td>
+                <td><button id="updateBtn${doc.id}" class="button">정보 변경</button></td>
+                <td><button id="deleteBtn${doc.id}" class="button">구독 취소</button></td>
             </tr>`;
 
   // 불러온 구독자 정보를 id가 subscribersList인 태그에 append
