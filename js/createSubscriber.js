@@ -12,7 +12,7 @@ export async function createSubscriber(event) {
   const subname = $(".subname").val().trim();
   const subemail = $(".subemail").val().trim();
 
-  //이메일 양식이 올바른지 확인할 때 사용하는 정규표현식
+  //이메일 양식 검증 정규표현식
   let email_regexp =
     /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
