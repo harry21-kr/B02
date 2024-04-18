@@ -9,8 +9,8 @@ export async function createSubscriber(event) {
   //form태그 submit이벤트 방지
   event.preventDefault();
   //구독하기 인풋으로 입력받은 값을 각 변수에 저장(앞,뒤 공백 제거)
-  let subname = $(".subname").val().trim();
-  let subemail = $(".subemail").val().trim();
+  const subname = $(".subname").val().trim();
+  const subemail = $(".subemail").val().trim();
 
   //이메일 양식이 올바른지 확인할 때 사용하는 정규표현식
   let email_regexp =
@@ -30,8 +30,8 @@ export async function createSubscriber(event) {
   }
   //db의 DOC(subscribers)에 {name:입력받은 이름 값,email:입력받은 이메일 값}형태의 데이터 삽입
   await addDoc(collection(db, "subscribers"), {
-    name: subname,
-    email: subemail,
+    userName: subname,
+    userEmail: subemail,
   });
   // 데이터 입력후 구독 완료!창 띄우고 새로고침
   alert("구독 완료!");
