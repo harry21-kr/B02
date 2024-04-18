@@ -6,17 +6,15 @@
 ![Static Badge](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
 
-### 프로젝트 구성
-1. HTML, CSS, JavaScript로 이루어진 프로젝트입니다.
-2. DB는 Firebase를 사용하며, 이는 서버를 대체합니다.
-3. 라이브러리로는 Jquery를 사용합니다.
-4. [왕초보] 웹개발 종합반을 기반으로 만들어졌습니다.
-
 ### 프로젝트 파일 구조
 ```bash
 ├── css
+│   ├─ button.css
+│   ├─ global.css
+│   ├─ input.css
 │   ├─ reset.css
-│   └─ style.css
+│   └─ table.css
+├── img
 ├── js
 │   ├── config
 │   │   └─ firebase.js
@@ -27,5 +25,6 @@
 │   ├── imports.js
 │   ├── readSubscriber.js
 │   └── updateSubscriber.js
-└── index.html
+├── index.html
+└── README.md
 ```
