@@ -14,7 +14,6 @@
 │   ├─ input.css
 │   ├─ reset.css
 │   └─ table.css
-├── img
 ├── js
 │   ├── config
 │   │   └─ firebase.js
@@ -25,6 +24,7 @@
 │   ├── imports.js
 │   ├── readSubscriber.js
 │   └── updateSubscriber.js
+├── img
 ├── index.html
 └── README.md
 ```
