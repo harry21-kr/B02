@@ -25,7 +25,9 @@ subscribersSnapshot.forEach((doc) => {
                 <td><button id="deleteBtn${doc.id}">구독 취소</button></td>
             </tr>`;
 
+  // 불러온 구독자 정보를 id가 subscribersList인 태그에 append
   $("#subscribersList").append(temp_html);
 
+  // 생성한 버튼 id에 템플릿 리터럴을 이용해 doc.id를 추가, 클릭할 시 deleteSubscriber() 함수 인자에 doc.id를 넣어 실행
   $(`#deleteBtn${doc.id}`).click(() => deleteSubscriber(doc.id));
 });
