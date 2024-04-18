@@ -20,11 +20,7 @@ export async function createSubscriber(event) {
   if (!subname) {
     return alert("이름을 입력해주세요");
   }
-  //이메일을 입력하지 않았을경우 경고창("이메일을 입력해주세요")띄워주는 조건문
-  else if (!subemail) {
-    return alert("이메일을 입력해주세요");
-  }
-  //유저가 입력한 이메일 양식이 정규표현식과 일치하지 않을경우("올바른 이메일 주소를 입력해주세요") 경고창을 띄워주는 조건문
+  //유저가 입력한 이메일 양식이 정규표현식과 일치하지 않을경우 alert을 띄워주는 조건문
   else if (!email_regexp.test(subemail)) {
     return alert("올바른 이메일 주소를 입력해주세요");
   }
@@ -33,7 +29,7 @@ export async function createSubscriber(event) {
     userName: subname,
     userEmail: subemail,
   });
-  // 데이터 입력후 구독 완료!창 띄우고 새로고침
+  // 데이터 입력후 구독 alert창 띄우고 새로고침
   alert("구독 완료!");
   window.location.reload();
 }
