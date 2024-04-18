@@ -1,0 +1,12 @@
+input {
+  border: none;
+  color: white;
+  background-color: #212121;
+  border-bottom: 1px solid #bfbfbf;
+  transition: all 0.4s;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}

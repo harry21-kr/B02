@@ -11,6 +11,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  word-break: keep-all;
+}
+
+button {
+  cursor: pointer;
 }
 
 .body_background {
@@ -81,18 +86,15 @@ body {
 /* 팀원소개 카드 왼쪽 박스 내용 */
 
 .links {
+  width: 100%;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin: 40px 250px;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
 .profile_img {
   width: 500px;
   height: 330px;
-  margin-top: 80px;
-  margin-left: 100px;
   border-radius: 10px;
 }
 
@@ -116,23 +118,14 @@ body {
   transition: all 0.4s;
 }
 
-.email_box {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3px;
-}
-
-.email_img {
+.email {
   width: 40px;
   height: 30px;
   transition: all 0.4s;
 }
 
 .link_images:hover {
-  height: 40px;
-  width: 40px;
+  scale: 150%;
 }
 
 .link_images_mail:hover {
@@ -142,8 +135,12 @@ body {
 
 /* 팀원소개 카드 오른쪽 텍스트 내용 */
 
-.card_right_text {
-  margin-top: 85px;
+.card_right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
 
 .idv_name_tag {
@@ -151,22 +148,13 @@ body {
 }
 
 .div_course {
-  margin-left: 74px;
-  margin-top: 5px;
-}
-
-.idv_info_1 {
-  margin-top: 50px;
-  margin-left: 5px;
-  font-size: 30px;
-  margin-bottom: 30px;
+  margin-top: 8px;
+  margin-left: 12px;
 }
 
 .idv_info_1_content {
-  margin-left: 5px;
   font-size: 20px;
   line-height: 1.4;
-  margin-right: 80px;
 }
 
 .idv_info_2_content {
@@ -176,100 +164,103 @@ body {
 /* 팀원소개 텍스트 */
 
 .text {
-  text-align: center;
+  max-width: 1224px;
+  width: 100%;
+  text-align: left;
   color: white;
   font-size: 60px;
   margin-top: 80px;
+  padding-left: 16px;
   padding-bottom: 8px;
+  border-bottom: 1px solid #bfbfbf;
 }
 
 /* 팀원 소개 카드박스 폼 */
 
-.cardbox {
+.card {
+  max-width: 1224px;
+  width: 100%;
+  height: 380px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: between;
+  align-items: center;
+  gap: 100px;
 }
 
-.card {
-  margin-top: 50px;
-  width: 1400px;
-  height: 600px;
+.card_reverse {
+  max-width: 1224px;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: between;
+  align-items: center;
+  gap: 100px;
 }
 
 .card_left {
-  width: 50%;
-}
-
-.card_right {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bfbfbf;
+  gap: 20px;
 }
 
 /* 맨 아래쪽에 있는 구독박스 */
 
 .subbox_form {
-  display: flex;
-  justify-content: center;
-}
-
-.subbox_low {
-  margin-top: 100px;
   border: 1px solid #bfbfbf;
-  width: 1200px;
+  width: 800px;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
-}
-
-.subbox_form {
-  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .subbox_low_title {
-  border-top: 50px;
-  height: 100px;
-  line-height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-size: 40px;
   border-bottom: 1px solid #bfbfbf;
 }
 
 .subbox_low_text {
-  font-size: 25px;
-  margin: 8px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
 }
 
 #submit-form {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  margin: 40px 350px;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  gap: 20px;
 }
 
 #submit-form input {
+  width: 100%;
   padding: 20px 0px;
-  border: none;
   font-size: 15px;
-  color: white;
-  background-color: #212121;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 .submitbtn {
+  width: 360px;
   height: 50px;
   font-size: 20px;
   margin-top: 10px;
-  background-color: #212121;
-  border: 1px solid #bfbfbf;
-  color: white;
-  transition: all 0.4s;
-}
-
-.submitbtn:hover {
-  border: 5px solid #212121;
-  background-color: white;
-  color: #212121;
-}
-
-input:focus {
-  outline: none;
 }
 
 /* 간단한 footer */
