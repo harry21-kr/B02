@@ -34,7 +34,6 @@ body {
 .infobox {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
 }
 
 .info_content {
@@ -61,10 +60,30 @@ body {
   padding-left: 20px;
 }
 
-.info_main2 {
-  font-size: 20px;
-  padding-top: 30px;
-  padding-left: 20px;
+/* 구독 로직이 들어가야하는 박스 */
+
+/*
+.info_content_subbox {
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 400px;
+  width: 800px;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+}
+*/
+
+.table {
+  height: 400px;
+  width: 800px;
+}
+
+thead {
+  border-top: 10px;
+  font-size: medium;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 /* 팀원소개 카드 왼쪽 박스 내용 */
@@ -76,7 +95,7 @@ body {
   margin: 50px 250px;
 }
 
-img {
+.profile_img {
   width: 500px;
   height: 330px;
   margin-top: 80px;
@@ -85,16 +104,38 @@ img {
 }
 
 .email {
-  margin-left: 280px;
+  margin-left: 304px;
+  margin-bottom: 30px;
+  color: inherit;
+  border: 1px solid white;
+  padding: 3px;
+  text-decoration: none;
 }
+/* 이거 이메일링크같은거 일일히 위치 수동으로 조정해야하나요? */
 
 .git_1 {
+  width: 35px;
+  height: 35px;
+  transition: all 0.4s;
 }
 
 .blog {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s;
 }
 
 .sns {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.link_images:hover {
+  height: 40px;
+  width: 40px;
 }
 
 /* 팀원소개 카드 오른쪽 텍스트 내용 */
@@ -215,8 +256,25 @@ img {
   background-color: #212121;
   border: 1px solid #bfbfbf;
   color: white;
+  transition: all 0.4s;
+}
+
+.submitbtn:hover {
+  border: 5px solid #212121;
+  background-color: white;
+  color: #212121;
 }
 
 input:focus {
   outline: none;
+}
+
+/* 간단한 footer */
+
+.footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
