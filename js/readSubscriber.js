@@ -22,6 +22,7 @@ subscribersSnapshot.forEach((doc) => {
             <tr>
                 <td>${userName}</td>
                 <td>${userEmail}</td>
+                <td><button id="updateBtn${doc.id}">정보 변경</button></td>
                 <td><button id="deleteBtn${doc.id}">구독 취소</button></td>
             </tr>`;
 

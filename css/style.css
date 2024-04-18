@@ -70,18 +70,7 @@ body {
   width: 600px;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
-}
-
-.table {
-  height: 400px;
-  width: 100%;
-}
-
-thead {
-  font-size: medium;
-  /* border-top: 2px solid white; */
-  border-bottom: 1px solid white;
-  height: 26px;
+  overflow-y: scroll;
 }
 
 /* 팀원소개 카드 왼쪽 박스 내용 */

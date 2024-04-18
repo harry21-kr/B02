@@ -6,6 +6,7 @@
     <title>B02</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
 
     <!-- 구독자 생성 -->
     <script type="module" src="js/createSubscriber.js"></script>
@@ -38,30 +39,17 @@
         <div class="info_main1">6. 이런 된장 테이블을 못만들겠다.</div>
       </div>
       <div class="info_content_subbox">
-        <div class="team_sub">
-          <table class="table">
-            <thead class="table_contents">
-              <tr>
-                <th class="table_contents_name" style="width: 35%">
-                  구독자 이름
-                </th>
-                <th class="table_contents_email" style="width: 35%">
-                  구독자 이메일
-                </th>
-                <th style="width: 10%"></th>
-                <th style="width: 10%"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%">구독자 이름</th>
+              <th style="width: 25%">구독자 이메일</th>
+              <th style="width: 15%"></th>
+              <th style="width: 15%"></th>
+            </tr>
+          </thead>
+          <tbody id="subscribersList"></tbody>
+        </table>
       </div>
     </header>
     <div class="text">팀원소개</div>

@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+}
+
+thead > tr {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+tbody > tr {
+  border-bottom: 1px dashed #bfbfbf;
+}
+
+td,
+th {
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
