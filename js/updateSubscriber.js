@@ -1,10 +1,10 @@
 import { initFirebase } from "./utils/initFirebase.js";
 import { updateDoc, doc } from "./imports.js";
 //파이어베이스 DB에 연결하는 코드
-const db = initFirebase();
 
 //id를 전달받고, DB의 데이터를 id값으로 찾아서 기존 이름과 이메일을 입력받은 이름, 이메일 값으로 업데이트 하는 함수
 export async function updateSubscriber(id) {
+  const db = initFirebase();
   //prompt에서 변경할 닉네임을 입력받아 변수에 저장(앞,뒤 띄어쓰기 제거)
   let new_name = prompt("닉네임").trim();
 
